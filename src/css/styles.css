@@ -1,0 +1,103 @@
+.container{
+    margin: 0 auto;
+    width: fit-content;
+
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    font-size: clamp(1.5rem, 15vw, 3rem);
+    margin: 20px;
+
+    animation: load 1s ease;
+}
+
+.containerInput{
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.404);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    animation: load2 2s ease;
+}
+
+.containerInput input[type="number"]{
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    margin-right: 2px;
+
+    color: white;
+
+    background-color: transparent;
+}
+
+.containerInput input[type="number"]:focus{
+    outline: none;
+}
+
+.containerInput input[type="number"]::placeholder{
+    color: white;
+}
+
+.buttonSend{
+    width: 40px;
+    background-color: transparent;
+
+    border: none;
+    border-radius: 2px;
+
+    transition: 300ms ease;
+}
+
+.buttonSend:hover{
+    background-color: rgb(168, 168, 168);
+}
+
+.main{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 3px;
+
+    background-color: rgba(255, 255, 255, 0.404);
+
+    color: white;
+    
+}
+
+.main h2{
+    margin-bottom: 10px;
+}
+
+.main > *{
+    margin-top: 3px;
+}
+
+@keyframes load{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes load2{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
